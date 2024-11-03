@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Enthusiast Hub</title>
+    
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-image: url('.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #f8b400;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header .btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.review-category, .news-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-category img, .news-category img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.review-category:hover, .news-category:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-up {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#comparison table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    animation: slideUp 1s forwards; /* Applying slide-up animation */
+}
+
+#comparison th, #comparison td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+</style>
+
+
+
+</head>
+<body background="23242212.jpg" height="100">
+    <header>
+        <h1>Car Enthusiast Hub</h1>
+        <p>Your ultimate destination for car reviews, news, and passionate discussions.</p>
+        <div class="buttons">
+            <button class="btn">Join Now</button>
+            <button class="btn">Learn More</button>
+        </div>
+    </header>
+
+    <section id="reviews">
+        <h2>Latest Car Reviews</h2>
+        <div class="review-category fade-in">
+            <img src="vehicle-testing.jpg" height="100"  alt="Performance Test Image">
+            <h3>Performance Tests</h3>
+            <p>In-depth analysis of speed, handling, and acceleration.</p>
+        </div>
+        <div class="review-category fade-in">
+            <img src="60a44facbe3a0e2516539d131be4ac86--car-interiors-luxury.jpg" height="100"  alt="Interior Comfort Image">
+            <h3>Interior Comfort</h3>
+            <p>Evaluating ergonomics, materials, and technology features.</p>
+        </div>
+        <div class="review-category fade-in">
+            <img src="what-is-a-good-ncap-rating-in-cars.jpg" height="100"  alt="Overall Rating Image">
+            <h3>Overall Rating</h3>
+            <p>Final verdict based on comprehensive testing.</p>
+        </div>
+    </section>
+
+    <section id="news">
+        <h2>Breaking Automotive News</h2>
+        <div class="news-category slide-up">
+            <img src="ev-production-line-on-advanced-600nw-2374438937.jpg" height="100"  alt="Industry Updates Image">
+            <h3>Industry Updates</h3>
+            <p>Latest developments from major car manufacturers.</p>
+        </div>
+        <div class="news-category slide-up">
+            <img src="automotive tech advances.jpg" height="100"  alt="Technology Advancements Image">
+            <h3>Technology Advancements</h3>
+            <p>Cutting-edge innovations in automotive tech.</p>
+        </div>
+        <div class="news-category slide-up">
+            <img src="shivam.jpg" alt="Market Trends Image">
+            <h3>Market Trends</h3>
+            <p>Insights into consumer preferences and industry shifts.</p>
+        </div>
+    </section>
+
+    <section id="comparison">
+        <h2>Car Comparison Tool</h2>
+        <table>
+            <tr>
+                <th>Model</th>
+                <th>Price</th>
+                <th>MPG</th>
+                <th>Horsepower</th>
+            </tr>
+            <tr>
+                <td>Car A</td>
+                <td>$25,000</td>
+                <td>30</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Car B</td>
+                <td>$30,000</td>
+                <td>28</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Car C</td>
+                <td>$35,000</td>
+                <td>25</td>
+                <td>300</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; Design: Shivam kumar mishra </p>
+        <p>&copy; 2024 Car Enthusiast Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
